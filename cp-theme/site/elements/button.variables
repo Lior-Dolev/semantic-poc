@@ -1,0 +1,16 @@
+
+/* Button */
+@backgroundColor: #E8E9EB;
+
+/* Text */
+@fontWeight: normal;
+@textColor: #333333;
+@borderRadius: 0;
+
+@hoverBackgroundColor: #DEDFE0;
+
+@focusBackgroundColor: @backgroundColor;
+
+@downBackgroundColor: #CCCDCF;
+
+@labeledLabelFontSize: 13px;

@@ -1,0 +1,19 @@
+
+.ui.disabled.button.cp-button {
+  &.default, &.primary {
+    background-color: #E7E9EB;
+    color: #A7A9AC;
+  }
+}
+
+.ui.button.cp-button {
+  &.primary, &.ghost {
+    text-transform: uppercase;
+  }
+
+  &.ghost {
+    &:not(:hover):not(:active), &:disabled {
+      background-color: transparent;
+    }
+  }
+}
