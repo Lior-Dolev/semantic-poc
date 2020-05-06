@@ -12,14 +12,6 @@ const inputValidationStatus = {
     WARNING: 'warning',
 };
 
-/*
-validation Obj structure::
-{
-    validationMode: 'valid' || 'invalid' || 'warning',
-    validationMessage: 'some Message..'
-}
-*/
-
 export const FormInput = props => {
     const {
         placeholder,
