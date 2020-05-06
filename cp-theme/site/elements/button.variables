@@ -12,5 +12,7 @@
 @focusBackgroundColor: @backgroundColor;
 
 @downBackgroundColor: #CCCDCF;
-
-@labeledLabelFontSize: 13px;
+@lineHeight: 13px;
+@horizontalMargin: 0;
+@verticalPadding: 0;
+@horizontalPadding: 10px;

@@ -4,3 +4,5 @@
 @primaryColorFocus: @primaryColor;
 @primaryColorDown: #1C2636;
 @borderColor: #D2D5D9;
+@medium: 13px;
+@pageFont: "Open Sans", system-ui, sans-serif;

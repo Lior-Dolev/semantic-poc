@@ -1,12 +1,8 @@
 
-.ui.disabled.button.cp-button {
-  &.default, &.primary {
-    background-color: #E7E9EB;
-    color: #A7A9AC;
-  }
-}
-
 .ui.button.cp-button {
+  min-width: 90px;
+  height: 30px;
+
   &.primary, &.ghost {
     text-transform: uppercase;
   }
@@ -14,6 +10,33 @@
   &.ghost {
     &:not(:hover):not(:active), &:disabled {
       background-color: transparent;
+    }
+  }
+
+  &.disabled {
+    background-color: #E7E9EB;
+    color: #A7A9AC;
+  }
+
+  &:not(.primary):not(.ghost) {
+    border: 1px solid #D2D5D9;
+
+    &:active {
+      border-color: #B6B9BA;
+    }
+
+    &:disabled {
+      border-color: #E7E9EB;
+    }
+  }
+
+  &:not(.ghost) {
+    &:focus {
+      border: 1px solid #4FB4F1;
+    }
+
+    &.invalid {
+      border: 1px solid #F24E4E;
     }
   }
 }
