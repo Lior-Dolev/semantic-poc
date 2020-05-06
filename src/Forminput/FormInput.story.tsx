@@ -33,7 +33,7 @@ storiesOf('Forminput', module)
 
             <h4>Valid</h4>
             <FormInput
-                value={'lorem ipsum dolor'}
+                value={'lorem ipsum'}
                 validationMode={'valid'}
                 validationMessage={'Lorem ipsum dolor sit amet'}
             />
@@ -42,7 +42,7 @@ storiesOf('Forminput', module)
 
             <h4>Invalid</h4>
             <FormInput
-                value={'lorem ipsum dolor'}
+                value={'lorem ipsum'}
                 validationMode={'invalid'}
                 validationMessage={'Lorem ipsum dolor sit amet'}
             />
@@ -51,13 +51,11 @@ storiesOf('Forminput', module)
 
             <h4>Warning</h4>
             <FormInput
-                value={'lorem ipsum dolor'}
+                value={'lorem ipsum'}
                 validationMode={'warning'}
                 validationMessage={'Lorem ipsum dolor sit amet'}
             />
             <br/><hr />
-
-
 
         </ div>
     ));
