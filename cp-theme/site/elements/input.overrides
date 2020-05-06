@@ -1,12 +1,16 @@
 .cp-form-input.field {
     width: 120px;
     font-size: 13px;
-    opacity: 1 !important;
+    opacity: 1;
 
     & .ui.input input {
         height: 30px;
         width: 100%;
         padding-left: 10px;
+
+        &:focus::placeholder {
+        color: #C6C9CF;
+        }
     }
 
     & > label {
@@ -31,7 +35,7 @@
         border-color: #D2D5D9;
     }
 
-    &.disabled .ui.disabled.input,{
+    &.disabled .ui.disabled.input {
         opacity: 1;
         & input {
             color: #A7A9AC;

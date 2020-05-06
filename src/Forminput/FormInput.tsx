@@ -1,9 +1,9 @@
 import * as React from 'react'
-import { Form } from 'semantic-ui-react'
+import { Form, Icon } from 'semantic-ui-react'
 import classnames from 'classnames'
 import '../../cp-theme/semantic.less'
 
-const { Input, Field } = Form
+const { Input } = Form
 
 const inputValidationStatus = {
     NONE: 'none', // default
@@ -11,6 +11,7 @@ const inputValidationStatus = {
     INVALID: 'invalid',
     WARNING: 'warning',
 };
+
 
 export const FormInput = props => {
     const {
