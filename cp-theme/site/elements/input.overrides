@@ -3,6 +3,10 @@
     font-size: 13px;
     opacity: 1;
 
+    & input::selection {
+        background-color: #82c9f2;
+    }
+
     & .ui.input input {
         height: 30px;
         width: 100%;
@@ -12,6 +16,11 @@
         color: #C6C9CF;
         }
     }
+
+
+    /*--------------
+      Input's label
+    ----------------*/
 
     & > label {
         display: inline-block;
@@ -27,6 +36,11 @@
         padding-left: 4px;
     }
 
+
+    /*-------------------
+    Read only, Disabled
+    ---------------------*/
+
     &.readonly input,
     &.readonly input:active,
     &.readonly input:focus,
@@ -41,6 +55,11 @@
             color: #A7A9AC;
         }
     }
+
+
+    /*----------------------
+    Validation Input Fields
+    ------------------------*/
 
     &.has-validation {
         & ~ span.validation-message {
