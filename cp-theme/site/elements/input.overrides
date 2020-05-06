@@ -18,9 +18,9 @@
     }
 
 
-    /*--------------
-      Input's label
-    ----------------*/
+    /*----------------
+       Input's label
+    ------------------*/
 
     & > label {
         display: inline-block;
