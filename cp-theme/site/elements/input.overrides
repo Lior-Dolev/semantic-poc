@@ -17,6 +17,12 @@
         color: #7C7C7C;
     }
 
+    &.required > label::after {
+        content: '*';
+        color: #F24E4E;
+        padding-left: 4px;
+    }
+
     &.readonly input,
     &.readonly input:active,
     &.readonly input:focus,
@@ -31,5 +37,43 @@
             color: #A7A9AC;
         }
     }
+
+    &.has-validation {
+        & ~ span.validation-message {
+            display: inline-block;
+            margin-top: 3px;
+            font-size: 13px;
+        }
+
+        &.valid {
+            & input {
+                border-color: #56B40A;
+            }
+            & ~ span.validation-message {
+                color: #56B40A;
+            }
+        }
+
+        &.invalid {
+            & input {
+                border-color: #F24E4E;
+            }
+            & ~ span.validation-message {
+                color: #F24E4E;
+            }
+        }
+
+        &.warning {
+            & input {
+                border-color: #FFB72D;
+            }
+            & ~ span.validation-message {
+                color: #FFB72D;
+            }
+        }
+    }
 }
+
+
+
 
