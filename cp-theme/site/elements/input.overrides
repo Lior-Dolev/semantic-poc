@@ -1,0 +1,35 @@
+.cp-form-input.field {
+    width: 120px;
+    font-size: 13px;
+    opacity: 1 !important;
+
+    & .ui.input input {
+        padding-left: 10px;
+        height: 30px;
+        width: 120px;
+    }
+
+    & > label {
+        display: inline-block;
+        text-transform: capitalize;
+        margin-bottom: 3px;
+        font-size: 12px;
+        color: #7C7C7C;
+    }
+
+    &.readonly input,
+    &.readonly input:active,
+    &.readonly input:focus,
+    &.disabled .ui.disabled.input input {
+        background-color: #E7E9EB;
+        border-color: #D2D5D9;
+    }
+
+    &.disabled .ui.disabled.input,{
+        opacity: 1;
+        & input {
+            color: #A7A9AC;
+        }
+    }
+}
+
