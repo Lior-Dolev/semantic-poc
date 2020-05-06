@@ -2,8 +2,8 @@ import * as React from 'react'
 import { storiesOf } from '@storybook/react'
 import { FormInput } from './index'
 
-storiesOf('Forminput', module)
-    .add('Forminput', () => (
+storiesOf('FormInput', module)
+    .add('FormInput', () => (
         <div style={{padding: 10}}>
 
             <h4>Default</h4>
