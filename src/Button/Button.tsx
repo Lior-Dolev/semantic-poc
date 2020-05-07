@@ -6,15 +6,17 @@ import '../../cp-theme/semantic.less'
 interface InternalButtonProps extends ButtonProps {
   styleType?: 'default' | 'primary' | 'ghost';
   invalid?: boolean;
+  icon?: string;
 }
 
 export const Button = (props: InternalButtonProps) => {
   const {
     styleType = 'default',
     invalid,
+    icon,
     ...rest
   } = props;
-  const className = classnames('cp-button', styleType, {invalid})
+  const className = classnames('cp-button', styleType, { invalid })
 
   return (
     <SButton

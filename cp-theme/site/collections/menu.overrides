@@ -1,0 +1,10 @@
+.ui.menu .ui.dropdown .menu > .active.item{
+	background: #bce3fe !important
+}
+.ui.compact.dropdown-menu:hover {
+	background-color: #dedfe0;
+}
+
+.ui.selection.dropdown .menu:before {
+  display: initial;
+}

@@ -1,0 +1,12 @@
+.ui.compact.dropdown-menu  {
+	border-radius: 0;
+	box-shadow: none;
+	
+	&:not(:hover):not(:active) {
+      background-color: #e8e9eb;
+	  border-style: solid;
+    }
+	.ui.compact.dropdown-menu:hover{
+		background-color: yellow;
+	}
+}
