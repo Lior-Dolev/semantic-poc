@@ -1,0 +1,16 @@
+
+@checkboxCheckColor: #2E3F58;
+
+@checkboxSize: 14px;
+@checkboxCheckFontSize: 12px;
+@checkboxBorderRadius: 0;
+@checkboxBorder: 1px solid @greyBorderColor;
+@checkboxHoverBorderColor: @greyBorderColor;
+@checkboxFocusBorderColor: @focusedBorderColor;
+
+@checkboxFocusCheckColor: @checkboxCheckColor;
+@checkboxActiveCheckColor: @checkboxCheckColor;
+@checkboxActiveFocusCheckColor: @checkboxCheckColor;
+
+@checkboxHoverBackground: #DEDFE0;
+@checkboxPressedBackground: #CCCDCF;

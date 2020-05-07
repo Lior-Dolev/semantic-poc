@@ -6,3 +6,11 @@
 @borderColor: #D2D5D9;
 @medium: 13px;
 @pageFont: "Open Sans", system-ui, sans-serif;
+
+@defaultBorderRadius: 0;
+@focusedBorderColor: #4FB4F1;
+@redBorderColor: #F24E4E;
+@greyBorderColor: #D2D5D9;
+@disabledBorderColor: #E7E9EB;
+@readOnlyBorderColor: #E7E9EB;
+@borderColor: @greyBorderColor;
