@@ -7,15 +7,10 @@ import '../../cp-theme/semantic.less'
 export const Search = props => {
     const {
         placeholder,
-        readOnly = false,
-        disabled = false,
-        isRequired = false,
     } = props;
 
     const formTextClasses = classnames({
         'cp-search-input': true,
-        'readonly': readOnly,
-        'disabled': disabled,
     });
 
     return (
