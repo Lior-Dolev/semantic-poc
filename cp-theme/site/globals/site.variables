@@ -1,8 +1,17 @@
-
+/*-----------------------
+         COLORS
+------------------------*/
 @primaryColor: #2E3F58;
 @primaryColorHover: #253347;
 @primaryColorFocus: @primaryColor;
 @primaryColorDown: #1C2636;
 @borderColor: #D2D5D9;
+
+
+
+/*-----------------------
+         FONTS
+------------------------*/
 @medium: 13px;
+@fontSize: 13px;
 @pageFont: "Open Sans", system-ui, sans-serif;
