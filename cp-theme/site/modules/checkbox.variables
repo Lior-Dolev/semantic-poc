@@ -7,6 +7,7 @@
 @checkboxBorder: 1px solid @greyBorderColor;
 @checkboxHoverBorderColor: @greyBorderColor;
 @checkboxFocusBorderColor: @focusedBorderColor;
+@checkboxActiveBorderColor: greyBorderColor;
 
 @checkboxFocusCheckColor: @checkboxCheckColor;
 @checkboxActiveCheckColor: @checkboxCheckColor;
