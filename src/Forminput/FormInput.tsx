@@ -36,17 +36,11 @@ export const FormInput = props => {
     return (
         <>
             <Input
-                icon={'setting'}
+                // icon={'setting'}     //TODO:: fix the import process of the icons..
                 className={formTextClasses}
                 placeholder={placeholder || 'Enter text here...'}
                 {...props}
             />
-            {/*<Input*/}
-            {/*    icon={'search'}*/}
-            {/*    className={formTextClasses}*/}
-            {/*    placeholder={placeholder || 'Enter text here...'}*/}
-            {/*    {...props}*/}
-            {/*/>*/}
 
             { validationMode !== inputValidationStatus.NONE && validationMessage &&
                 <span className={'validation-message'}>{validationMessage}</span> }
