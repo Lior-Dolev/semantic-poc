@@ -16,7 +16,6 @@ export const Search = props => {
         'cp-search-input': true,
         'readonly': readOnly,
         'disabled': disabled,
-        'required': isRequired,
     });
 
     return (
