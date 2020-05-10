@@ -14,28 +14,29 @@ export const Header = props => {
 
     const [headerContent, setHeaderContent ] = useState(children)
 
-    const headerClasses = classNames({
-        'cp-header': true,
-        'editable': isEditable,
-    })
-
     function handleChange(e) {
         isEditable && setHeaderContent(e.target.value)
     }
 
     function handleKeyPress(pressedKey) {
-        pressedKey.which === 13 && headerContent && pressedKey.target.blur()
-    }
-
-    function handleBlur({ target: {value} }) {
-        console.log('value: ', value)
-        if (!value) {
-            console.log('oops')
-            setHeaderContent(children)
+        if(pressedKey.which === 13 && headerContent) {
+            pressedKey.target.blur()
         }
-
-        handleHeaderSubmit && handleHeaderSubmit(headerContent)
     }
+
+    function handleBlur() {
+        if (!headerContent) {
+            setHeaderContent(children);
+            handleHeaderSubmit && handleHeaderSubmit(children)
+        } else {
+            handleHeaderSubmit && handleHeaderSubmit(headerContent)
+        }
+    }
+
+    const headerClasses = classNames({
+        'cp-header': true,
+        'editable': isEditable,
+    });
 
     return isEditable ?  (
             <SInput
