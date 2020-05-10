@@ -3,7 +3,7 @@ import { Form, Icon } from 'semantic-ui-react'
 import classnames from 'classnames'
 import '../../cp-theme/semantic.less'
 
-const { Input } = Form
+const { Input } = Form;
 
 const inputValidationStatus = {
     NONE: 'none', // default
@@ -36,11 +36,18 @@ export const FormInput = props => {
     return (
         <>
             <Input
-                icon={'search'}
+                icon={'setting'}
                 className={formTextClasses}
                 placeholder={placeholder || 'Enter text here...'}
                 {...props}
             />
+            {/*<Input*/}
+            {/*    icon={'search'}*/}
+            {/*    className={formTextClasses}*/}
+            {/*    placeholder={placeholder || 'Enter text here...'}*/}
+            {/*    {...props}*/}
+            {/*/>*/}
+
             { validationMode !== inputValidationStatus.NONE && validationMessage &&
                 <span className={'validation-message'}>{validationMessage}</span> }
         </>

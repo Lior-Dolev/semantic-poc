@@ -22,18 +22,32 @@ storiesOf('FormInput', module)
             <FormInput label={"some label:"} isRequired />
             <br/><hr />
 
-            {/*<div style={{display: "flex"}}>*/}
-            {/*    <div style={{display: 'flex', flexDirection: 'column'}}>*/}
-                    <h4>Read only</h4>
+            <div style={{display: "flex"}}>
+                <div style={{display: 'flex', flexDirection: 'column'}}>
+                    <h4>Read only- check point</h4>
                     <FormInput readOnly value={'lorem ipsum dolor'}/>
                     <br/><hr />
-                {/*</div>*/}
-            {/*</div>*/}
+                </div>
+                <div style={{display: 'flex', flexDirection: 'column', marginLeft: '60px'}}>
+                    <h4>Read only- default (Semantic UI React)</h4>
+                    <Form.Input readOnly value={'lorem ipsum dolor'} style={{width: '120px', height: '30px'}}/>
+                    <br/><hr />
+                </div>
+            </div>
 
 
-            <h4>Disabled</h4>
-            <FormInput disabled value={'lorem ipsum dolor'}/>
-            <br/><hr />
+            <div style={{display: "flex"}}>
+                <div style={{display: 'flex', flexDirection: 'column'}}>
+                    <h4>Read only- check point</h4>
+                    <FormInput disabled value={'lorem ipsum dolor'}/>
+                    <br/><hr />
+                </div>
+                <div style={{display: 'flex', flexDirection: 'column', marginLeft: '60px'}}>
+                    <h4>Read only- default (Semantic UI React)</h4>
+                    <Form.Input disabled value={'lorem ipsum dolor'} style={{width: '120px', height: '30px'}}/>
+                    <br/><hr />
+                </div>
+            </div>
 
 
             <h4>Valid</h4>
