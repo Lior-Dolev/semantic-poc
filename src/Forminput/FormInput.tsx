@@ -36,6 +36,7 @@ export const FormInput = props => {
     return (
         <>
             <Input
+                icon={'search'}
                 className={formTextClasses}
                 placeholder={placeholder || 'Enter text here...'}
                 {...props}

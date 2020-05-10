@@ -1,6 +1,8 @@
 import * as React from 'react'
 import { storiesOf } from '@storybook/react'
+import { Form } from 'semantic-ui-react'
 import { FormInput } from './index'
+
 
 storiesOf('FormInput', module)
     .add('FormInput', () => (
@@ -20,10 +22,13 @@ storiesOf('FormInput', module)
             <FormInput label={"some label:"} isRequired />
             <br/><hr />
 
-
-            <h4>Read only</h4>
-            <FormInput readOnly value={'lorem ipsum dolor'}/>
-            <br/><hr />
+            {/*<div style={{display: "flex"}}>*/}
+            {/*    <div style={{display: 'flex', flexDirection: 'column'}}>*/}
+                    <h4>Read only</h4>
+                    <FormInput readOnly value={'lorem ipsum dolor'}/>
+                    <br/><hr />
+                {/*</div>*/}
+            {/*</div>*/}
 
 
             <h4>Disabled</h4>
