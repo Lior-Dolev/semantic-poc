@@ -1,0 +1,5 @@
+
+/* Search */
+
+@promptBorderRadius: 1px;
+@promptBackground: red;

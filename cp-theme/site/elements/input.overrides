@@ -19,7 +19,7 @@
 
 
     /*----------------
-       Input's label
+       Search's label
     ------------------*/
 
     & > label {
@@ -58,7 +58,7 @@
 
 
     /*-----------------------
-     Validation Input Fields
+     Validation Search Fields
     ------------------------*/
 
     &.has-validation {

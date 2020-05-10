@@ -1,0 +1,49 @@
+.cp-search-input.ui.search {
+    opacity: 1;
+    & input {
+        width: 120px;
+        height: 30px;
+        color: #333;
+
+        &:focus::placeholder {
+        color: #C6C9CF;
+        }
+
+        &:not([readonly]) {
+            &:hover {
+                border-color: #4FB4F1;
+            }
+            &:focus {
+                background-color: #FFF2B3;
+                border-color: #B3AA6A
+            }
+            &:focus::placeholder {
+                visibility: hidden;
+            }
+        }
+
+
+    /*----------------
+         readonly
+    ------------------*/
+
+        &:read-only {
+            background-color: #E7E9EB;
+            border-color: #D2D5D9;
+        }
+    }
+
+
+    /*----------------
+         disabled
+    ------------------*/
+
+    & .ui.disabled.input {
+            opacity: 1;
+            & input {
+                background-color: #E7E9EB;
+                border-color: #D2D5D9;
+                color: #A7A9AC;
+            }
+        }
+}
