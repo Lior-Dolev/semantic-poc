@@ -1,8 +1,8 @@
 import * as React from 'react'
+import {useState} from "react";
 import { Header as SHeader, Input as SInput} from 'semantic-ui-react'
 import classNames from 'classnames'
 import '../../cp-theme/semantic.less'
-import {useRef, useState} from "react";
 
 
 export const Header = props => {
@@ -24,10 +24,17 @@ export const Header = props => {
     }
 
     function handleKeyPress(pressedKey) {
-        if(pressedKey.which === 13) {
-            pressedKey.target.blur()
-            handleHeaderSubmit && handleHeaderSubmit(headerContent)
+        pressedKey.which === 13 && headerContent && pressedKey.target.blur()
+    }
+
+    function handleBlur({ target: {value} }) {
+        console.log('value: ', value)
+        if (!value) {
+            console.log('oops')
+            setHeaderContent(children)
         }
+
+        handleHeaderSubmit && handleHeaderSubmit(headerContent)
     }
 
     return isEditable ?  (
@@ -36,6 +43,7 @@ export const Header = props => {
                 value={headerContent}
                 onChange={handleChange}
                 onKeyPress={handleKeyPress}
+                onBlur={handleBlur}
             />
     ) : (
         <SHeader className={headerClasses}>{children}</SHeader>
