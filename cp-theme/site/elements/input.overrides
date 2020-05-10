@@ -1,3 +1,7 @@
+/*----------------------------------------------------
+                    Regular Form Input
+------------------------------------------------------*/
+
 .cp-form-input.field {
     width: 120px;
     opacity: 1;
@@ -97,8 +101,13 @@
 }
 
 
+
+/*----------------------------------------------------
+            Header (editable & none editable)
+------------------------------------------------------*/
+
 .cp-header {
-    width: 100% !important;
+    width: 100%;
     font-size: 24px;
     & input {
         border-color: transparent !important;

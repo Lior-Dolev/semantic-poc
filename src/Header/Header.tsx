@@ -4,7 +4,6 @@ import { Header as SHeader, Input as SInput} from 'semantic-ui-react'
 import classNames from 'classnames'
 import '../../cp-theme/semantic.less'
 
-
 export const Header = props => {
     const {
         children,
