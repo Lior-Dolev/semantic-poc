@@ -9,14 +9,10 @@ export const Search = props => {
         placeholder,
     } = props;
 
-    const formTextClasses = classnames({
-        'cp-search-input': true,
-    });
-
     return (
         <>
             <SemanticSearch
-                className={formTextClasses}
+                className={'cp-search-input'}
                 placeholder={placeholder || 'Search...'}
                 // icon={'setting'}     //TODO:: fix the import process of the icons..
                 {...props}

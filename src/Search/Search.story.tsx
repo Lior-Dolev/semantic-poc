@@ -11,7 +11,7 @@ storiesOf('Search', module)
             <Search onSearchChange={(e) => {console.log('search value: ', e.target.value)}} />
             <br/><hr />
 
-
+            <br/>
             <div className={'side-by-side-wrapper'} >
                 <div className={'side-by-side-inner'} >
                     <h4>Read only- check point</h4>
@@ -22,9 +22,9 @@ storiesOf('Search', module)
                     <SemanticSearch className={'semantic-search'} readOnly value={'lorem ipsum dolor'} />
                 </div>
             </div>
-            <br/><br/><hr />
+            <br/><hr />
 
-
+            <br/>
             <div className={'side-by-side-wrapper'} >
                 <div className={'side-by-side-inner'} >
                     <h4>Read only- check point</h4>
@@ -35,7 +35,7 @@ storiesOf('Search', module)
                     <SemanticSearch className={'semantic-search'} disabled value={'lorem ipsum dolor'}/>
                 </div>
             </div>
-            <br/><br/><hr />
+            <br/><hr />
         </ div>
     ));
 
