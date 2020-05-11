@@ -106,16 +106,15 @@
             Header (editable & none editable)
 ------------------------------------------------------*/
 
-.cp-header {
+.cp-header.input {
     width: 100%;
-    font-size: 24px;
+    font-size: 28px;
     & input {
-        border-color: transparent !important;
-        font-size: 26px;
-    }
-    &.editable input {
+        padding: 7px 10px;
+        border-color: transparent;
         &:focus {
-            border-color: #4FB4F1 !important;
+            border-color: transparent;
+            box-shadow: 0px 0px 0px 2px #c3def7;
         }
     }
 }

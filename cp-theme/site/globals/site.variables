@@ -11,8 +11,8 @@
 @greyBorderColor: #D2D5D9;
 @disabledBorderColor: #E7E9EB;
 @readOnlyBorderColor: #E7E9EB;
-
-
+@highlightBackground: red;
+@highlightColor: red;
 
 /*-----------------------
          FONTS

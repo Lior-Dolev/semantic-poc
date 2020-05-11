@@ -4,7 +4,7 @@ import { Form } from 'semantic-ui-react'
 import { FormInput } from './index'
 
 
-storiesOf('FormInput', module)
+storiesOf('Yaniv', module)
     .add('FormInput', () => (
         <div style={{padding: 10}}>
 

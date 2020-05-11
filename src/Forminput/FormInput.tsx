@@ -37,7 +37,6 @@ export const FormInput = props => {
     return (
         <>
             <Input
-                // icon={'some icon..'}     //TODO:: fix the import process of the icons..
                 className={formTextClasses}
                 placeholder={placeholder || 'Enter text here...'}
                 {...props}

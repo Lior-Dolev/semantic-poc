@@ -2,7 +2,7 @@
 // import { storiesOf } from '@storybook/react'
 // import Chip from './index'
 //
-// storiesOf('Header', module)
+// storiesOf('Yaniv', module)
 //     .add('Header', () => (
 //         <div style={{padding: 10}}>
 //
