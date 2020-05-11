@@ -1,5 +1,5 @@
 import * as React from 'react'
-import {useState} from "react";
+import {useRef, useState} from "react";
 import { Input as SInput } from 'semantic-ui-react'
 import classNames from 'classnames'
 import '../../cp-theme/semantic.less'
@@ -11,7 +11,7 @@ export const EditableTitle = props => {
     } = props;
 
     const [headerContent, setHeaderContent ] = useState(children)
-
+    const inputRef = useRef(null)
     function handleChange(e) {
         setHeaderContent(e.target.value)
     }
@@ -31,18 +31,25 @@ export const EditableTitle = props => {
         }
     }
 
+    function activateFocus() {
+        inputRef.current.focus()
+    }
+
     const headerClasses = classNames({
         'cp-editable-title': true,
     });
 
     return (
-        <SInput
-            icon
-            className={headerClasses}
-            value={headerContent}
-            onChange={handleChange}
-            onKeyPress={handleKeyPress}
-            onBlur={handleBlur}
-        />
+        <div onMouseEnter={activateFocus}>
+                <SInput
+                    ref={inputRef}
+                    icon
+                    className={headerClasses}
+                    value={headerContent}
+                    onChange={handleChange}
+                    onKeyPress={handleKeyPress}
+                    onBlur={handleBlur}
+                />
+        </div>
     )
 };
