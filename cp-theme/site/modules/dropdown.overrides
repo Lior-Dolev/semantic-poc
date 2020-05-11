@@ -1,12 +1,39 @@
-.ui.compact.dropdown-menu  {
-	border-radius: 0;
-	box-shadow: none;
-	
-	&:not(:hover):not(:active) {
-      background-color: #e8e9eb;
-	  border-style: solid;
-    }
-	.ui.compact.dropdown-menu:hover{
-		background-color: yellow;
+.ui.selection.active.dropdown .menu{
+	display: block;
+	width: 128px;
+}
+
+.ui.selection.dropdown.cp-select {
+	&.snow{
+		background: white;
+		width: 153px;
+		border: 1px solid D2D5D9;
+		 .dropdown.icon{
+			background: #E8E9EB;
+			right: 0.8em;
+		}
+	}
+
+ .default.text, .text{
+	 color: #333333;
+ }
+ &:hover {
+	background-color: #dedfe0;
+ }
+ &:active {
+	background-color: #cccdcf
+ }
+ &.invalid{
+	border: 1px solid #F24E4E;
+ }
+ &.disabled {
+	 background: #E7E9EB;
+	 color: #A7A9AC;
+ }
+}
+.ui.disabled.selection.dropdown.cp-select.disabled{
+	.default.text{
+		color: #A7A9AC;
 	}
 }
+

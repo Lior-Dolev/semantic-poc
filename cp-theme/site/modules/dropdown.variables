@@ -1,1 +1,26 @@
+/* Select DropDown */
+
 @borderRadius: 0;
+@selectionMinWidth: 128px;
+@selectionBackground: #E8E9EB;
+@selectionMinHeight: 30px;
+
+
+/*Select Dropdown on Hover */
+
+@selectionHoverBorderColor: 1px solid #D2D5D9; 
+
+/*Select Dropdown on Focus */
+
+ @selectionVisibleBorderColor: #b6b9ba; 
+ @selectionVisibleBorderColor: #b6b9ba;
+ @selectionActiveHoverBorderColor: #b6b9ba;
+ @selectionFocusBorderColor: #b6b9ba;
+
+ /* Menu Item Hover */
+
+ @hoveredItemBackground: #BCE3FE;
+
+/* Disabled */
+
+ @disabledOpacity: none;
