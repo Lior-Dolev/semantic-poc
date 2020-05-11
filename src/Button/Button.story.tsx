@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { storiesOf } from '@storybook/react' 
 import { Button } from './index'
+import { Icon } from '../index'
 
 storiesOf('Semantic', module)
 .add('Button', () => (
@@ -28,6 +29,14 @@ storiesOf('Semantic', module)
     <hr />
     <p>Ghost - Disabled</p>
     <Button styleType={'ghost'} disabled>Disabled</Button>
+    <hr />
+    <p>Add</p>
+    <Button>
+      <span>
+      <Icon name='plus' />
+      Add
+      </span>
+    </Button>
     <hr />
   </ div>
 ))
