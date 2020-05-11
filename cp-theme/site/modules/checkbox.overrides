@@ -1,0 +1,63 @@
+/*--------------------
+     Indeterminate
+--------------------*/
+.ui.checkbox input:indeterminate ~ .box:after,
+.ui.checkbox input:indeterminate ~ label:after {
+  content: '';
+  background-color: #2E3F58;
+  width: 6px;
+  height: 6px;
+  top: 4px;
+  left: 4px;
+}
+
+/*--------------
+     invalid
+---------------*/
+
+.ui.invalid.checkbox label::before,
+.ui.invalid.checkbox input:checked ~ label:before,
+.ui.invalid.checkbox input:not([type=radio]):indeterminate ~ label:before {
+  border-color: @redBorderColor;
+}
+
+/*--------------
+     Hover
+---------------*/
+.ui.checkbox:not(.read-only):not(.disabled) input ~ label:hover::before,
+.ui.checkbox:not(.read-only):not(.disabled) input:checked ~ label:hover::before,
+.ui.checkbox:not(.read-only):not(.disabled) input:not([type=radio]):indeterminate ~ label:hover::before {
+  background: @checkboxHoverBackground;
+}
+
+/*-------------------------------------
+     Disabled + Read-Only + Hover
+-------------------------------------*/
+
+.ui.read-only.checkbox label:hover::before,
+.ui.disabled.checkbox label:hover::before,
+.ui.checkbox input[disabled] ~ label:hover::before {
+  background: @checkboxBackground;
+  border-color: @greyBorderColor;
+}
+
+/*--------------
+     Active
+---------------*/
+
+.ui.checkbox:not(.read-only):not(.disabled) input ~ label:active::before,
+.ui.checkbox:not(.read-only):not(.disabled) input:checked ~ label:active::before,
+.ui.checkbox:not(.read-only):not(.disabled) input:not([type=radio]):indeterminate ~ label:active::before {
+  background: @checkboxPressedBackground;
+}
+
+/*-------------------------------------
+     Disabled + Read-Only + Active
+-------------------------------------*/
+
+.ui.read-only.checkbox label:active::before,
+.ui.disabled.checkbox label:active::before,
+.ui.checkbox input[disabled] ~ label:active::before {
+  background: @checkboxBackground;
+  border-color: @greyBorderColor;
+}

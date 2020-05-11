@@ -7,7 +7,7 @@ storiesOf('Header', module)
         <div style={{padding: 10}}>
 
             <h2>Regular Header:</h2>
-            <Header >Check point Wiki Point</Header>
+            <Header>Check point Wiki Point</Header>
             <br/><hr />
 
 

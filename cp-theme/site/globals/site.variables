@@ -6,6 +6,11 @@
 @primaryColorFocus: @primaryColor;
 @primaryColorDown: #1C2636;
 @borderColor: #D2D5D9;
+@focusedBorderColor: #4FB4F1;
+@redBorderColor: #F24E4E;
+@greyBorderColor: #D2D5D9;
+@disabledBorderColor: #E7E9EB;
+@readOnlyBorderColor: #E7E9EB;
 
 
 
@@ -15,3 +20,9 @@
 @medium: 13px;
 @fontSize: 13px;
 @pageFont: "Open Sans", system-ui, sans-serif;
+
+
+/*-----------------------
+     BORDER RADIUS
+------------------------*/
+@defaultBorderRadius: 0;

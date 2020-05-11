@@ -1,5 +1,6 @@
 import * as React from 'react'
-import { Form, Icon } from 'semantic-ui-react'
+import { Form } from 'semantic-ui-react'
+import Icon from 'front-common-icons'
 import classnames from 'classnames'
 import '../../cp-theme/semantic.less'
 
@@ -36,7 +37,7 @@ export const FormInput = props => {
     return (
         <>
             <Input
-                // icon={'setting'}     //TODO:: fix the import process of the icons..
+                // icon={'some icon..'}     //TODO:: fix the import process of the icons..
                 className={formTextClasses}
                 placeholder={placeholder || 'Enter text here...'}
                 {...props}

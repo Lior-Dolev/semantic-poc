@@ -13,7 +13,8 @@ export const Search = props => {
             <SemanticSearch
                 className={'cp-search-input'}
                 placeholder={placeholder || 'Search...'}
-                // icon={'setting'}     //TODO:: fix the import process of the icons..
+                input={{ icon: 'search', iconPosition: 'left' }}
+                // icon={null}     //TODO:: fix the import process of the icons..
                 {...props}
             />
         </>

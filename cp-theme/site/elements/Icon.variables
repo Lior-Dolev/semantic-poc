@@ -1,0 +1,47 @@
+
+/*--------------
+   Font Files
+---------------*/
+
+@fontPath: "../assets/fonts";
+
+@fontName: 'fa-regular-400';
+@outlineFontName: 'fa-solid-900';
+@brandFontName: 'fa-brands-400';
+@src:
+  url("../assets/fonts/@{outlineFontName}.eot?#iefix") format('embedded-opentype'),
+  url("../assets/fonts/@{outlineFontName}.woff2") format('woff2'),
+  url("../assets/fonts/@{outlineFontName}.woff") format('woff'),
+  url("../assets/fonts/@{outlineFontName}.ttf") format('truetype'),
+  url("../assets/fonts/@{outlineFontName}.svg#icons") format('svg')
+;
+@fallbackSRC: url("../assets/fonts/@{fontName}.eot");
+
+
+/*--------------
+ Optional Files
+---------------*/
+
+/* Outline Icons */
+@importOutlineIcons: true;
+
+@outlineSrc:
+  url("../assets/fonts/@{outlineFontName}.eot?#iefix") format('embedded-opentype'),
+  url("../assets/fonts/@{outlineFontName}.woff2") format('woff2'),
+  url("../assets/fonts/@{outlineFontName}.woff") format('woff'),
+  url("../assets/fonts/@{outlineFontName}.ttf") format('truetype'),
+  url("../assets/fonts/@{outlineFontName}.svg#icons") format('svg')
+;
+@outlineFallbackSRC: url("../assets/fonts/@{outlineFontName}.eot");
+
+/* Brand Icons */
+@importBrandIcons: true;
+
+@brandSrc:
+  url("../assets/fonts/@{brandFontName}.eot?#iefix") format('embedded-opentype'),
+  url("../assets/fonts/@{brandFontName}.woff2") format('woff2'),
+  url("../assets/fonts/@{brandFontName}.woff") format('woff'),
+  url("../assets/fonts/@{brandFontName}.ttf") format('truetype'),
+  url("../assets/fonts/@{brandFontName}.svg#icons") format('svg')
+;
+@brandFallbackSRC: url("../assets/fonts/@{brandFontName}.eot");

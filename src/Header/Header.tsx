@@ -39,6 +39,7 @@ export const Header = props => {
 
     return isEditable ?  (
             <SInput
+                icon
                 className={headerClasses}
                 value={headerContent}
                 onChange={handleChange}
