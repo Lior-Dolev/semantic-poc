@@ -32,7 +32,7 @@ export const EditableTitle = props => {
     }
 
     const headerClasses = classNames({
-        'cp-header': true,
+        'cp-editable-title': true,
     });
 
     return (

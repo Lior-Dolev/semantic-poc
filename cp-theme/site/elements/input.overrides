@@ -1,14 +1,13 @@
 /*----------------------------------------------------
                     Regular Form Input
 ------------------------------------------------------*/
+cp-form-input, cp--editable-title input::selection {
+   background-color: #82c9f2;
+}
 
 .cp-form-input.field {
     width: 120px;
     opacity: 1;
-
-    & input::selection {
-        background-color: #82c9f2;
-    }
 
     & .ui.input input {
         height: 30px;
@@ -106,7 +105,7 @@
             Header (editable & none editable)
 ------------------------------------------------------*/
 
-.cp-header.input {
+.cp-editable-title.input {
     width: 100%;
     font-size: 28px;
     & input {
