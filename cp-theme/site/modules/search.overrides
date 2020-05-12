@@ -22,15 +22,14 @@
         }
 
 
-    /*----------------
-         readonly
-    ------------------*/
-        &:read-only {
+    /*-------------------
+      readonly, Disabled
+    ---------------------*/
+        &:read-only, &:disabled {
             background-color: #E7E9EB;
             border-color: #D2D5D9;
         }
     }
-
 
     /*----------------
          disabled
@@ -38,8 +37,6 @@
     & .ui.disabled.input {
         opacity: 1;
         & input {
-            background-color: #E7E9EB;
-            border-color: #D2D5D9;
             color: #A7A9AC;
         }
     }
