@@ -2,7 +2,7 @@ import * as React from 'react'
 import { storiesOf } from '@storybook/react'
 import { EditableTitle } from './index'
 
-storiesOf('Yaniv', module)
+storiesOf('Semantic', module)
     .add('EditableTitle', () => (
         <div style={{padding: 10}}>
 

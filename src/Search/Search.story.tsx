@@ -4,7 +4,7 @@ import {Form, Search as SemanticSearch} from 'semantic-ui-react'
 import { Search } from './index'
 import './index.css'
 
-storiesOf('Yaniv', module)
+storiesOf('Semantic', module)
     .add('Search', () => (
         <div style={{padding: 10}}>
             <h4>Default</h4>

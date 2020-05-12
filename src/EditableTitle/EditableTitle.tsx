@@ -11,7 +11,7 @@ export const EditableTitle = props => {
     } = props;
 
     const [headerContent, setHeaderContent ] = useState(children)
-    const inputRef = useRef(null)
+
     function handleChange(e) {
         setHeaderContent(e.target.value)
     }
@@ -31,25 +31,16 @@ export const EditableTitle = props => {
         }
     }
 
-    function activateFocus() {
-        inputRef.current.focus()
-    }
-
-    const headerClasses = classNames({
-        'cp-editable-title': true,
-    });
+    const headerClasses = classNames('cp-editable-title');
 
     return (
-        <div onMouseEnter={activateFocus}>
                 <SInput
-                    ref={inputRef}
-                    icon
                     className={headerClasses}
                     value={headerContent}
                     onChange={handleChange}
                     onKeyPress={handleKeyPress}
                     onBlur={handleBlur}
+                    // TODO:: {...props} talk with Lior
                 />
-        </div>
     )
 };

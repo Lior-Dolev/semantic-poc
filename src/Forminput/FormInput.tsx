@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { Form } from 'semantic-ui-react'
-import Icon from 'front-common-icons'
 import classnames from 'classnames'
 import '../../cp-theme/semantic.less'
 
@@ -17,8 +16,6 @@ const inputValidationStatus = {
 export const FormInput = props => {
     const {
         placeholder,
-        readOnly = false,
-        disabled = false,
         isRequired = false,
         validationMode = inputValidationStatus.NONE,
         validationMessage,
@@ -26,8 +23,6 @@ export const FormInput = props => {
 
     const formTextClasses = classnames({
         'cp-form-input': true,
-        'readonly': readOnly,
-        'disabled': disabled,
         'required': isRequired,
         'has-validation valid': validationMode === inputValidationStatus.VALID,
         'has-validation invalid': validationMode === inputValidationStatus.INVALID,

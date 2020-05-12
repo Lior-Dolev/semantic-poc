@@ -46,6 +46,7 @@
     "@storybook/react": "^5.3.17",
     "@types/react": "^16.9.23",
     "@types/react-dom": "^16.9.5",
+    "front-common-icons": "git+https://cloudinfra@checkpoint.com:Sugarwillkillyou@gitlab.locsec.net/cloudinfra-dev/front-common-icons#1.4",
     "raw-loader": "^4.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

@@ -2,7 +2,7 @@
 /* Input */
 
 @placeholderColor: #C6C9CF;
-
-@borderRadius: 0px;
 @focusBorderColor: #4FB4F1;
 
+@borderRadius: 0px;
+@lineHeight: 30px;

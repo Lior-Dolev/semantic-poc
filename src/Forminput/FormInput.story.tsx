@@ -4,7 +4,7 @@ import { Form } from 'semantic-ui-react'
 import { FormInput } from './index'
 
 
-storiesOf('Yaniv', module)
+storiesOf('Semantic', module)
     .add('FormInput', () => (
         <div style={{padding: 10}}>
 
@@ -38,11 +38,11 @@ storiesOf('Yaniv', module)
 
             <div style={{display: "flex"}}>
                 <div style={{display: 'flex', flexDirection: 'column'}}>
-                    <h4>Read only- check point</h4>
+                    <h4>Disabled- check point</h4>
                     <FormInput disabled value={'lorem ipsum dolor'}/>
                 </div>
                 <div style={{display: 'flex', flexDirection: 'column', marginLeft: '60px'}}>
-                    <h4>Read only- default (Semantic UI React)</h4>
+                    <h4>Disabled- default (Semantic UI React)</h4>
                     <Form.Input disabled value={'lorem ipsum dolor'} style={{width: '120px', height: '30px'}}/>
                 </div>
             </div>
