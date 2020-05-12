@@ -15,19 +15,29 @@ storiesOf('Semantic', module)
     ));
 
 
+
 function ExampleContainerComponent() {
-    const [arrOfChips, setArrOfChips] = useState(['chip 11', 'chip 22', 'chip 33', 'chip 44'])
+    const chipsObj = {
+        chip11: true,
+        chip22: false,
+        chip33: false,
+        chip44: true,
+        chip55: true,
+    };
+
+    const chipsArr = ['chip11', 'chip22', 'chip33', 'chip44', 'chip55']
+    const [chips, setChips] = useState(chipsArr)
 
     function handleChipDelete(chipToDelete) {
         console.log('got chip: ', chipToDelete)
-        setArrOfChips(arrOfChips.filter(chip => chip !== chipToDelete))
+        // setChips(chips.filter(chip => chip !== chipToDelete))
     }
     return (
-        <ChipsGroup
-            chips={arrOfChips}
-            handleChipDelete={handleChipDelete}
-            // theme={'blue'}
-        />
-    )
+            <ChipsGroup
+                chips={chips}
+                handleChipDelete={handleChipDelete}
+                mode={'edit'} // view || edit? something like tha//)
+            />
+        )
 }
 

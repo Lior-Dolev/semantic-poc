@@ -10,7 +10,7 @@ export const ChipsGroup = props => {
     const {
         chips,
         handleChipDelete,
-        theme = 'solid'
+        mode = 'edit'
     } = props;
 
     function renderChip(chipText) {
@@ -19,7 +19,7 @@ export const ChipsGroup = props => {
                 key={chipText}
                 chipText={chipText}
                 handleChipDelete={handleChipDelete}
-                theme={theme}
+                mode={mode}
             />
         )
     }
@@ -35,7 +35,7 @@ export const Chip = props => {
         chipText ,
         children,
         handleChipDelete,
-        theme = 'solid',
+        mode = 'view',
     } = props;
 
     const [shouldDeleteChip, setShouldDeleteChip] = useState(false)
@@ -51,14 +51,14 @@ export const Chip = props => {
     }
 
     function calculateIconSize() {
-        return theme === 'solid' ? 7 : 10
+        return mode === 'view' ? 7 : 10
     }
 
 
     const chipClasses = classNames({
         'cp-chip': true,
-        'solid-theme': theme === 'solid',
-        'blue-theme': theme === 'blue',
+        'solid-theme': mode === 'view',
+        'blue-theme': mode === 'edit',
     });
 
     return (
