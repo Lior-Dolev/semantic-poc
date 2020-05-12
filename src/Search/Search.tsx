@@ -9,7 +9,7 @@ export const Search = props => {
         placeholder,
     } = props;
 
-    const searchClasses = ('cp-search-input')
+    const searchClasses = classNames('cp-search-input')
     return (
         <SemanticSearch
             className={searchClasses}
