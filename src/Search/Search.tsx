@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { Search as SemanticSearch } from 'semantic-ui-react'
+import classNames from 'classnames'
 import '../../cp-theme/semantic.less'
 
 
@@ -8,9 +9,10 @@ export const Search = props => {
         placeholder,
     } = props;
 
+    const searchClasses = ('cp-search-input')
     return (
         <SemanticSearch
-            className={'cp-search-input'}
+            className={searchClasses}
             placeholder={placeholder || 'Search...'}
             input={{ icon: 'search', iconPosition: 'left' }}
             {...props}
