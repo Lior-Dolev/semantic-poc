@@ -7,7 +7,6 @@ import '../../cp-theme/semantic.less'
 import './index.css'
 
 const KeyCodes = {
-    comma: 188,
     enter: 13,
 };
 
@@ -20,6 +19,7 @@ export const ChipsGroup = props => {
     } = props;
 
     const [stateTags, setTags] = useState([])
+    const [shouldDisplayInput, setShouldDisplayInput] = useState(false)
 
     useEffect(() => {
         let normalizedTags = [];
@@ -30,38 +30,46 @@ export const ChipsGroup = props => {
         setTags(normalizedTags)
     }, [chips]);
 
-    const delimiters = [KeyCodes.comma, KeyCodes.enter];
+    const delimiters = [KeyCodes.enter];
 
-    function handleDelete(i) {
-        const updatedTags  = [...stateTags];
-        updatedTags.splice(i, 1);
+    function convertArrayToNormalizedObject(arrOfTags) {
         const tagsObj = {};
-        updatedTags.forEach(tag => {
+        arrOfTags.forEach(tag => {
             tagsObj[tag.id]= tag['boolValue'];
         });
-        handleChipDelete(tagsObj)
+        return tagsObj
+    }
+
+    function handleDelete(indexToDelete) {
+        const updatedTags  = [...stateTags];
+        updatedTags.splice(indexToDelete, 1);
+        const tagsObj = convertArrayToNormalizedObject(updatedTags);
+        handleChipDelete(tagsObj);
     };
 
     function handleAddition(tag) {
-        console.log('tag: ', tag)
-        const newTag = {...tag}
-        newTag['boolValue']= true;
+        const newTag = {...tag};
+        newTag['boolValue']= true;  // default value will be true?? //TODO:: (YANIV) check requirments
         const updatedTags  = [...stateTags];
         updatedTags.push(newTag);
-        const tagsObj = {};
-        updatedTags.forEach(tag => {
-            tagsObj[tag.id]= tag['boolValue'];
-        });
-        handleChipAddition(tagsObj)
-
+        const tagsObj = convertArrayToNormalizedObject(updatedTags);
+        handleChipAddition(tagsObj);
     };
 
+    function handleAddClick() {
+        setShouldDisplayInput(true)
+    }
+
+    function handleInputBlur() {
+        setShouldDisplayInput(false)
+    }
 
     const chipsGroupClasses = classNames({
         'cp-chips-group': true,
         'view-mode': mode === 'view',
         'edit-mode': mode === 'edit',
-    })
+        'show-input': shouldDisplayInput,
+    });
 
     return (
         <div className={chipsGroupClasses}>
@@ -70,11 +78,12 @@ export const ChipsGroup = props => {
                 tags={stateTags}
                 handleDelete={handleDelete}
                 handleAddition={handleAddition}
+                handleInputBlur={handleInputBlur}
                 delimiters={delimiters}
                 readOnly={mode === 'view'}
                 {...props}
             />
-            {mode === 'edit' && <button className={'add-btn'}><Icon name={'plus'} /></button>}
+            {mode === 'edit' && <button className={'add-btn'} onClick={handleAddClick}><Icon name={'plus'} /></button>}
         </div>
     )
 };

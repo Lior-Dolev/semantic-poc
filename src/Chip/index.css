@@ -128,7 +128,13 @@
 }
 
 .ReactTags__tagInput {
+    margin-top: 20px;
     display: none;
+}
+
+.cp-chips-group.edit-mode.show-input .ReactTags__tagInput {
+    background-color: red;
+    display: inline;
 }
 
 .cp-chips-group.edit-mode button.add-btn{

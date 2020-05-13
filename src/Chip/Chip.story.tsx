@@ -21,7 +21,7 @@ storiesOf('Semantic', module)
 
 
 function ExampleContainerComponent(props) {
-    const chipsObj = {
+    const chipsExampleObj = {
         chip11: true,
         chip22: false,
         chip33: false,
@@ -31,17 +31,18 @@ function ExampleContainerComponent(props) {
         chip77: true,
         chip88: true,
     };
-
-    const chipsArr = ['chip11', 'chip22', 'chip33', 'chip44', 'chip55']
-    const [chips, setChips] = useState(chipsObj)
+    const [chips, setChips] = useState(chipsExampleObj)
 
     function handleChipDelete(updatedTags) {
+        console.log('contianer component got: ', updatedTags)
         setChips(updatedTags)
     }
 
     function handleChipAddition(updatedTags) {
+        console.log('contianer component got: ', updatedTags)
         setChips(updatedTags)
     }
+
     return (
             <ChipsGroup
                 chips={chips}
