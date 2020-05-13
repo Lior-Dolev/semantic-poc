@@ -8,7 +8,8 @@ import '../../cp-theme/semantic.less'
 export const EditableTitle = props => {
     const {
         children,
-        onTitleChange
+        onTitleChange,
+        readOnly = false,
     } = props;
 
     const [headerContent, setHeaderContent ] = useState(children)
@@ -48,7 +49,6 @@ export const EditableTitle = props => {
             onKeyPress={handleKeyPress}
             onKeyDown={handleKeyDown}
             onBlur={handleBlur}
-            // TODO:: {...props} talk with Lior
         />
     )
 };

@@ -13,6 +13,7 @@ storiesOf('Semantic', module)
                 Check point Example
             </EditableTitle>
             <br/><hr />
+
         </ div>
     ));
 
