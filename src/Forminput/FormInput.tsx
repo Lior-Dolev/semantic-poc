@@ -47,9 +47,10 @@ export const FormInput = props => {
     return (
         <>
             <Input
-                icon={getIconName()}
+                icon={validationMode !== inputValidationStatus.NONE && getIconName()}
                 className={formTextClasses}
                 placeholder={placeholder || 'Enter text here...'}
+                fluid={true}
                 {...props}
             />
 

@@ -3,10 +3,17 @@
 ------------------------------------------------------*/
 
 .cp-form-input.field {
-    min-width: 120px;
-
+    display: flex;
+    &.inline {
+        flex-direction: row;
+        align-items: center;
+    }
+    &:not(.inline){
+        flex-direction: column;
+    }
     & .ui.input {
         min-width: 120px;
+        flex-grow: 10;
         & input {
             height: 30px;
             width: 100%;
