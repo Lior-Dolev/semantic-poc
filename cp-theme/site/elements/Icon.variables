@@ -9,13 +9,9 @@
 @outlineFontName: 'fa-solid-900';
 @brandFontName: 'fa-brands-400';
 @src:
-  url("../assets/fonts/@{outlineFontName}.eot?#iefix") format('embedded-opentype'),
-  url("../assets/fonts/@{outlineFontName}.woff2") format('woff2'),
-  url("../assets/fonts/@{outlineFontName}.woff") format('woff'),
-  url("../assets/fonts/@{outlineFontName}.ttf") format('truetype'),
-  url("../assets/fonts/@{outlineFontName}.svg#icons") format('svg')
+  url("../assets/fonts/@{outlineFontName}.svg#"FontAwesome5Free-Regular") format('svg')
 ;
-@fallbackSRC: url("../assets/fonts/@{fontName}.eot");
+@fallbackSRC: url("../assets/fonts/@{outlineFontName}.svg#"FontAwesome5Free-Regular") format('svg');
 
 
 /*--------------
@@ -26,22 +22,14 @@
 @importOutlineIcons: true;
 
 @outlineSrc:
-  url("../assets/fonts/@{outlineFontName}.eot?#iefix") format('embedded-opentype'),
-  url("../assets/fonts/@{outlineFontName}.woff2") format('woff2'),
-  url("../assets/fonts/@{outlineFontName}.woff") format('woff'),
-  url("../assets/fonts/@{outlineFontName}.ttf") format('truetype'),
-  url("../assets/fonts/@{outlineFontName}.svg#icons") format('svg')
+  url("../assets/fonts/@{outlineFontName}.svg#FontAwesome5Free-Solid") format('svg')
 ;
-@outlineFallbackSRC: url("../assets/fonts/@{outlineFontName}.eot");
+@outlineFallbackSRC: url("../assets/fonts/@{outlineFontName}.svg#FontAwesome5Free-Solid") format('svg');
 
 /* Brand Icons */
 @importBrandIcons: true;
 
 @brandSrc:
-  url("../assets/fonts/@{brandFontName}.eot?#iefix") format('embedded-opentype'),
-  url("../assets/fonts/@{brandFontName}.woff2") format('woff2'),
-  url("../assets/fonts/@{brandFontName}.woff") format('woff'),
-  url("../assets/fonts/@{brandFontName}.ttf") format('truetype'),
-  url("../assets/fonts/@{brandFontName}.svg#icons") format('svg')
+  url("../assets/fonts/@{brandFontName}.svg#FontAwesome5Brands-Regular") format('svg')
 ;
-@brandFallbackSRC: url("../assets/fonts/@{brandFontName}.eot");
+@brandFallbackSRC: url("../assets/fonts/@{brandFontName}.svg#FontAwesome5Brands-Regular") format('svg');

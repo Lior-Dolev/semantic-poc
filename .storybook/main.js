@@ -21,7 +21,9 @@ module.exports = {
     });
 
     config.plugins.push(
-      new MiniCssExtractPlugin()
+      new MiniCssExtractPlugin({
+        filename: '[name].[contenthash].css',
+      })
     );
 
     config.resolve.extensions.push('.ts', '.tsx', '.js');

@@ -1,16 +1,94 @@
+/*******************************
+         Site Settings
+*******************************/
 
-@primaryColor: #2E3F58;
-@primaryColorHover: #253347;
-@primaryColorFocus: @primaryColor;
-@primaryColorDown: #1C2636;
-@borderColor: #D2D5D9;
-@medium: 13px;
+/*-------------------
+       Fonts
+--------------------*/
+
 @pageFont: "Open Sans", system-ui, sans-serif;
 
+/*-------------------
+    Border Radius
+--------------------*/
+
 @defaultBorderRadius: 0;
-@focusedBorderColor: #4FB4F1;
-@redBorderColor: #F24E4E;
-@greyBorderColor: #D2D5D9;
+
+/*-------------------
+    Brand Colors
+--------------------*/
+
+@primaryColor         : @blue;
+@secondaryColor       : #E8E9EB;
+@lightSecondaryColor  : transparent;
+
+/*-------------------
+        Page
+--------------------*/
+
+@textColor  : @black;
+@lineHeight : 1.5;
+
+/*-------------------
+      Site Colors
+--------------------*/
+
+/*---  Colors  ---*/
+@red              : #F24E4E;
+@black            : #333333;
+@grey             : #D2D5D9;
+@orange           : #FFB72D;
+@green            : #56B40A;
+@blue             : #2E3F58;
+
+/*--- Colored Border ---*/
+@redBorderColor     : @red;
+@orangeBorderColor  : @orange;
+@greenBorderColor   : @green;
+@greyBorderColor    : @grey; // CP
+
+/*-------------------
+      Borders
+--------------------*/
+
+@borderColor        : @greyBorderColor;
 @disabledBorderColor: #E7E9EB;
-@readOnlyBorderColor: #E7E9EB;
-@borderColor: @greyBorderColor;
+@focusedBorderColor : #4FB4F1; // CP
+@readOnlyBorderColor: #E7E9EB; // CP
+
+/*******************************
+             States
+*******************************/
+
+/*-------------------
+      Disabled
+--------------------*/
+
+@disabledTextColor: #A7A9AC;
+
+/*-------------------
+        Hover
+--------------------*/
+
+/*---  Colors  ---*/
+@primaryColorHover        : #253347;
+@secondaryColorHover      : #DEDFE0;
+@lightSecondaryColorHover : #DEDFE0;
+
+/*-------------------
+        Focus
+--------------------*/
+
+/*---  Colors  ---*/
+@primaryColorFocus        : @primaryColor;
+@secondaryColorFocus      : @secondaryColor;
+@lightSecondaryColorFocus : @lightSecondaryColor;
+
+/*-------------------
+    Down (:active)
+--------------------*/
+
+/*---  Colors  ---*/
+@primaryColorDown         : #1C2636;
+@secondaryColorDown       : #CCCDFD;
+@lightSecondaryColorDown  : #CCCDFD;

@@ -1,17 +1,46 @@
 
-@checkboxCheckColor: #2E3F58;
+/*******************************
+            Checkbox
+*******************************/
 
 @checkboxSize: 14px;
-@checkboxCheckFontSize: 12px;
+
+/* Checkbox */
 @checkboxBorderRadius: 0;
-@checkboxBorder: 1px solid @greyBorderColor;
-@checkboxHoverBorderColor: @greyBorderColor;
-@checkboxFocusBorderColor: @focusedBorderColor;
-@checkboxActiveBorderColor: greyBorderColor;
 
-@checkboxFocusCheckColor: @checkboxCheckColor;
-@checkboxActiveCheckColor: @checkboxCheckColor;
-@checkboxActiveFocusCheckColor: @checkboxCheckColor;
+/* Checkmark */
+@checkboxCheckFontSize: 12px;
+@checkboxCheckColor   : @primaryColor; // CP
 
-@checkboxHoverBackground: #DEDFE0;
-@checkboxPressedBackground: #CCCDCF;
+/*-------------------
+        States
+--------------------*/
+
+/* Hover */
+@checkboxHoverBackground  : @lightSecondaryColorHover;
+@checkboxHoverBorderColor : @greyBorderColor;
+
+/* Pressed */
+@checkboxPressedBackground  : @lightSecondaryColorDown;
+@checkboxPressedBorderColor : @lightSecondaryColorDown;
+@checkboxPressedColor       : @checkboxCheckColor;
+
+/* Focus */
+@checkboxFocusBackground  : @lightSecondaryColor;
+@checkboxFocusBorderColor : @focusedBorderColor;
+@checkboxFocusCheckColor  : @checkboxCheckColor;
+
+/* Active */
+@checkboxActiveBackground : @lightSecondaryColor;
+@checkboxActiveBorderColor: @greyBorderColor;
+@checkboxActiveCheckColor : @checkboxCheckColor;
+
+/* Active Focus */
+@checkboxActiveFocusBackground  : @lightSecondaryColor;
+@checkboxActiveFocusBorderColor : @checkboxFocusBorderColor;
+@checkboxActiveFocusCheckColor  : @checkboxCheckColor;
+
+/* Indeterminate */
+@checkboxIndeterminateBackground: @checkboxActiveBackground;
+@checkboxIndeterminateBorderColor: @checkboxActiveBorderColor;
+@checkboxIndeterminateCheckColor: @checkboxActiveCheckColor;
