@@ -1,8 +1,16 @@
 .form-input-story {
     padding: 30px;
 }
-.
 
 .form-input-story .side-by-side-wrapper {
-    background-color: red;
+    display: flex;
+}
+
+.form-input-story .side-by-side-wrapper .side-by-side-inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input-story .side-by-side-wrapper .side-by-side-inner.right {
+    margin-right: 100px;
 }

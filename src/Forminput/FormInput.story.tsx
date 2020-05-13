@@ -35,27 +35,27 @@ storiesOf('Semantic', module)
 
 
 
-            <div className={'side-by-side-wrapper'} style={{display: "flex"}}>
-                <div style={{display: 'flex', flexDirection: 'column'}}>
+            <div className={'side-by-side-wrapper'}>
+                <div className={'side-by-side-inner'}>
                     <h4>Read only- check point</h4>
                     <FormInput readOnly value={'lorem ipsum dolor'}/>
                 </div>
-                <div style={{display: 'flex', flexDirection: 'column', marginLeft: '60px'}}>
-                    <h4>Read only- default (Semantic UI React)</h4>
-                    <Form.Input readOnly value={'lorem ipsum dolor'} style={{width: '120px', height: '30px'}}/>
+                <div className={'side-by-side-inner right'}>
+                <h4>Read only- default (Semantic UI React)</h4>
+                    <Form.Input readOnly value={'lorem ipsum dolor'}/>
                 </div>
             </div>
             <br/><br/><hr />
 
 
-            <div style={{display: "flex"}}>
-                <div style={{display: 'flex', flexDirection: 'column'}}>
+            <div className={'side-by-side-wrapper'}>
+                <div className={'side-by-side-inner'}>
                     <h4>Disabled- check point</h4>
                     <FormInput disabled value={'lorem ipsum dolor'}/>
                 </div>
-                <div style={{display: 'flex', flexDirection: 'column', marginLeft: '60px'}}>
+                <div className={'side-by-side-inner right'}>
                     <h4>Disabled- default (Semantic UI React)</h4>
-                    <Form.Input disabled value={'lorem ipsum dolor'} style={{width: '120px', height: '30px'}}/>
+                    <Form.Input disabled value={'lorem ipsum dolor'}/>
                 </div>
             </div>
             <br/><br/><hr />
