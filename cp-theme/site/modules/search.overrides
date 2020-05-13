@@ -1,35 +1,39 @@
 .cp-search-input.ui.search {
-    & input {
+    & div.ui.input {
         min-width: 120px;
-        height: 30px;
-        color: #333;
+        & input {
+            width: 100%;
+            height: 30px;
+            color: #333;
 
-        &:focus::placeholder {
-        color: #C6C9CF;
-        }
-
-        &:not([readonly]) {
-            &:hover {
-                border-color: #4FB4F1;
-            }
-            &:focus {
-                background-color: #FFF2B3;
-                border-color: #B3AA6A
-            }
             &:focus::placeholder {
-                visibility: hidden;
+            color: #C6C9CF;
             }
-        }
+
+            &:not([readonly]) {
+                &:hover {
+                    border-color: #4FB4F1;
+                }
+                &:focus {
+                    background-color: #FFF2B3;
+                    border-color: #B3AA6A
+                }
+                &:focus::placeholder {
+                    visibility: hidden;
+                }
+            }
 
 
-    /*-------------------
-      readonly, Disabled
-    ---------------------*/
-        &:read-only, &:disabled {
-            background-color: #E7E9EB;
-            border-color: #D2D5D9;
+        /*-------------------
+          readonly, Disabled
+        ---------------------*/
+            &:read-only, &:disabled {
+                background-color: #E7E9EB;
+                border-color: #D2D5D9;
+            }
         }
     }
+
 
     /*----------------
          disabled
