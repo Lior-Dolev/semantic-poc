@@ -9,7 +9,6 @@ export const EditableTitle = props => {
     const {
         children,
         onTitleChange,
-        readOnly = false,
     } = props;
 
     const [headerContent, setHeaderContent ] = useState(children)
