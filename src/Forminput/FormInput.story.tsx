@@ -19,6 +19,7 @@ storiesOf('Semantic', module)
             <FormInput label={"some label:"} />
             <br/><hr />
 
+
             <h4>Required label</h4>
             <FormInput  label={"some label:"} isRequired />
             <br/><hr />
@@ -32,7 +33,6 @@ storiesOf('Semantic', module)
             <h4>Inline required label</h4>
             <FormInput  inline label={"some label:"} isRequired />
             <br/><hr />
-
 
 
             <div className={'side-by-side-wrapper'}>
