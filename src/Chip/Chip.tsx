@@ -30,16 +30,6 @@ export const ChipsGroup = props => {
         setTags(normalizedTags)
     }, [chips]);
 
-
-    // const [stateSuggestions, setSuggestions] = useState([
-    //     { id: 'USA', text: 'USA' },
-    //     { id: 'Germany', text: 'Germany' },
-    //     { id: 'Austria', text: 'Austria' },
-    //     { id: 'Costa Rica', text: 'Costa Rica' },
-    //     { id: 'Sri Lanka', text: 'Sri Lanka' },
-    //     { id: 'Thailand', text: 'Thailand' }
-    // ])
-    //
     const delimiters = [KeyCodes.comma, KeyCodes.enter];
 
     function handleDelete(i) {
@@ -80,8 +70,9 @@ export const ChipsGroup = props => {
                 tags={stateTags}
                 handleDelete={handleDelete}
                 handleAddition={handleAddition}
-                handleDrag={() => console.log('hey')}
                 delimiters={delimiters}
+                readOnly={mode === 'view'}
+                {...props}
             />
             {mode === 'edit' && <button>ADD</button>}
             {/*on click display input line..*/}
