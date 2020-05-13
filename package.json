@@ -52,6 +52,7 @@
     "react-dnd": "^5.0.0",
     "react-dnd-html5-backend": "^3.0.2",
     "react-dom": "^16.13.1",
+    "react-editable-title": "^1.2.7",
     "react-tag-input": "^6.4.2",
     "semantic-ui-less": "^2.4.1",
     "semantic-ui-react": "^0.88.2",

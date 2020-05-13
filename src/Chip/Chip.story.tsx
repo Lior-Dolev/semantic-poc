@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { storiesOf } from '@storybook/react'
-import {ChipsGroup, Chip} from './index'
+import { ChipsGroup } from './index'
 import {useState} from "react";
 
 storiesOf('Semantic', module)
@@ -26,16 +26,20 @@ function ExampleContainerComponent() {
     };
 
     const chipsArr = ['chip11', 'chip22', 'chip33', 'chip44', 'chip55']
-    const [chips, setChips] = useState(chipsArr)
+    const [chips, setChips] = useState(chipsObj)
 
-    function handleChipDelete(chipToDelete) {
-        console.log('got chip: ', chipToDelete)
-        // setChips(chips.filter(chip => chip !== chipToDelete))
+    function handleChipDelete(updatedTags) {
+        setChips(updatedTags)
+    }
+
+    function handleChipAddition(updatedTags) {
+        setChips(updatedTags)
     }
     return (
             <ChipsGroup
                 chips={chips}
                 handleChipDelete={handleChipDelete}
+                handleChipAddition={handleChipAddition}
                 mode={'edit'} // view || edit? something like that
             />
         )
