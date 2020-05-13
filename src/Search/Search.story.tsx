@@ -2,11 +2,11 @@ import * as React from 'react'
 import { storiesOf } from '@storybook/react'
 import {Form, Search as SemanticSearch} from 'semantic-ui-react'
 import { Search } from './index'
-import './index.css'
+import './story.css'
 
 storiesOf('Semantic', module)
     .add('Search', () => (
-        <div style={{padding: 10}}>
+        <div className={'search-story'}>
             <h4>Default</h4>
             <Search onSearchChange={(e) => {console.log('search value: ', e.target.value)}} />
             <br/><hr />

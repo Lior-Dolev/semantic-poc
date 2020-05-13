@@ -16,6 +16,7 @@ export const Search = props => {
             className={searchClasses}
             placeholder={placeholder || 'Search...'}
             input={{ icon: 'search', iconPosition: 'left' }}
+            fluid
             {...props}
         />
     )
