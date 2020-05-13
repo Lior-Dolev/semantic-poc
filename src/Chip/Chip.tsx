@@ -41,7 +41,6 @@ export const ChipsGroup = props => {
     }
 
     function handleDelete(indexToDelete) {
-        console.log('what', indexToDelete)
         const updatedTags  = [...stateTags];
         updatedTags.splice(indexToDelete, 1);
         const tagsObj = convertArrayToNormalizedObject(updatedTags);
