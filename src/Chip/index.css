@@ -72,9 +72,14 @@
 
 
 
-/****************************
-        REACT TAGS
-*****************************/
+
+
+
+
+
+/**********************************************
+             REACT TAGS LIBRARY
+***********************************************/
 
 .cp-chips-group .tag-wrapper.ReactTags__tag {
     display: inline-block;
@@ -109,10 +114,13 @@
      max-width: 180px;
      font-size: 16px;
      background-color: #49a7ff;
-     /*border: 1px solid black;*/
-     /*color: black;*/
      color: white;
  }
+
+.cp-chips-group.edit-mode .react-tags-wrapper,
+.cp-chips-group.edit-mode .react-tags-wrapper .ReactTags__selected {
+    display: inline;
+}
 
 .edit-mode .tag-wrapper.ReactTags__tag a{
     font-size: 16px;
@@ -120,5 +128,24 @@
 }
 
 .ReactTags__tagInput {
-    /*display: none;*/
+    display: none;
+}
+
+.cp-chips-group.edit-mode button.add-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #D2D5D9;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+.cp-chips-group.edit-mode button.add-btn:active,
+.cp-chips-group.edit-mode button.add-btn:focus{
+    outline: none;
+}
+
+.cp-chips-group.edit-mode .add-btn i {
+    font-size: 20px;
+    color: #D2D5D9;
 }

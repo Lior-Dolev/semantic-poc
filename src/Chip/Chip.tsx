@@ -1,10 +1,10 @@
 import * as React from 'react'
-import Icon from 'front-common-icons'
+import {useEffect, useState} from "react";
 import { WithContext as ReactTags } from 'react-tag-input';
 import classNames from 'classnames'
+import { Icon } from '../Icon'
 import '../../cp-theme/semantic.less'
 import './index.css'
-import {useEffect, useState} from "react";
 
 const KeyCodes = {
     comma: 188,
@@ -74,8 +74,7 @@ export const ChipsGroup = props => {
                 readOnly={mode === 'view'}
                 {...props}
             />
-            {mode === 'edit' && <button>ADD</button>}
-            {/*on click display input line..*/}
+            {mode === 'edit' && <button className={'add-btn'}><Icon name={'plus'} /></button>}
         </div>
     )
 };

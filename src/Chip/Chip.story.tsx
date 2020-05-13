@@ -7,8 +7,12 @@ storiesOf('Semantic', module)
     .add('Chip', () => (
         <div style={{padding: 10}}>
 
-            <h2>Regular:</h2>
+            <h2>View Mode (read only)</h2>
             <ExampleContainerComponent />
+            <br/><hr />
+
+            <h2>Edit Mode</h2>
+            <ExampleContainerComponent mode={'edit'}/>
             <br/><hr />
 
         </div>
@@ -16,13 +20,16 @@ storiesOf('Semantic', module)
 
 
 
-function ExampleContainerComponent() {
+function ExampleContainerComponent(props) {
     const chipsObj = {
         chip11: true,
         chip22: false,
         chip33: false,
         chip44: true,
         chip55: true,
+        chip66: false,
+        chip77: true,
+        chip88: true,
     };
 
     const chipsArr = ['chip11', 'chip22', 'chip33', 'chip44', 'chip55']
@@ -40,7 +47,7 @@ function ExampleContainerComponent() {
                 chips={chips}
                 handleChipDelete={handleChipDelete}
                 handleChipAddition={handleChipAddition}
-                mode={'edit'} // view || edit? something like that
+                {...props}   // pass down the 'mode' prop here
             />
         )
 }
