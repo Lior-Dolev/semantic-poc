@@ -6,12 +6,12 @@
 	line-height: 2em;
 	padding-left: 10px;
 	&.cb{
-		background: white;
+		background: #ffffff;
 		&:not(.error){
 			border: 1px solid #D2D5D9;
 		}
 		&:hover {
-			background-color: white;
+			background-color: #ffffff;
 		}
 		 .dropdown.icon{
 			background: #E8E9EB;

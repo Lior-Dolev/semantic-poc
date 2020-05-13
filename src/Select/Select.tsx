@@ -14,22 +14,14 @@ export const Select = (props: InternalSelectProps) => {
 		styleType = 'default',
 		invalid,
 		readOnly = false,
-		onChange,
 		...rest
 	} = props;
 	const className = classnames('cp-select', styleType, { invalid }, { readOnly })
-	function userReadOnly(e) {
-		if (readOnly) {
-			console.log('hee', e.target)
-			return
-		}
-	}
 	return (
 		<SSelect
 			styleType
 			placeholder={'Select'}
 			className={className}
-			onChange={userReadOnly}
 			{...rest}
 		/>
 	)
