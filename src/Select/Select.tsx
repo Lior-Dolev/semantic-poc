@@ -3,26 +3,33 @@ import { Select as SSelect, SelectProps } from 'semantic-ui-react'
 import classnames from 'classnames'
 import '../../cp-theme/semantic.less'
 
-const options = [
-	{ key: 1, text: 'Choice 1', value: 1 },
-	{ key: 2, text: 'Choice 2', value: 2 },
-	{ key: 3, text: 'Choice 3', value: 3 },
-]
+interface InternalSelectProps extends SelectProps {
+	styleType?: 'default' | 'cb' | 'ghost';
+	invalid?: boolean;
+	readOnly?: boolean,
+}
 
-export const Select = (props) => {
+export const Select = (props: InternalSelectProps) => {
 	const {
-		invalid,
-		readOnly,
 		styleType = 'default',
+		invalid,
+		readOnly = false,
+		onChange,
 		...rest
 	} = props;
-	const className = classnames('cp-select', styleType, { invalid })
+	const className = classnames('cp-select', styleType, { invalid }, { readOnly })
+	function userReadOnly(e) {
+		if (readOnly) {
+			console.log('hee', e.target)
+			return
+		}
+	}
 	return (
 		<SSelect
-			placeholder={'Select Option'}
+			styleType
+			placeholder={'Select'}
 			className={className}
-			options={options}
-			readOnly={false}
+			onChange={userReadOnly}
 			{...rest}
 		/>
 	)

@@ -1,9 +1,11 @@
-/* Select DropDown */
+/* Select Dropdown */
 
 @borderRadius: 0;
-@selectionMinWidth: 128px;
+@selectionMinWidth: 120px;
 @selectionBackground: #E8E9EB;
 @selectionMinHeight: 30px;
+@selectionPadding: 0;
+@defaultTextColor: #333333;
 
 
 /*Select Dropdown on Hover */
@@ -21,6 +23,19 @@
 
  @hoveredItemBackground: #BCE3FE;
 
-/* Disabled */
+/* dropdown icon */
 
- @disabledOpacity: none;
+ @searchSelectionLineHeight: 2rem;
+ @selectionVerticalPadding: 0;
+
+ /* Disable */
+
+ @disabledOpacity: 1;
+
+ /* Dropdown Error */
+
+ @errorBackgroundColor: #DEDFE0;
+ @errorBorderColor: #F24E4E;
+ @errorTextColor: #333333;
+ @errorItemHoverBackground: #BCE3FE;
+@errorItemActiveBackground: rgba(0, 0, 0, 0.03);

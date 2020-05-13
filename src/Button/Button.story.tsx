@@ -1,9 +1,10 @@
 import * as React from 'react'
 import { storiesOf } from '@storybook/react'
 import { Button } from './index'
+import { Icon } from '../index'
 
-storiesOf('Button', module)
-  .add('Mixin', () => (
+storiesOf('Semantic', module)
+  .add('Button', () => (
     <div style={{ padding: 10 }}>
       <p>Default</p>
       <Button>Default</Button>
@@ -29,8 +30,14 @@ storiesOf('Button', module)
       <p>Ghost - Disabled</p>
       <Button styleType={'ghost'} disabled>Disabled</Button>
       <hr />
-      <p>Button</p>
-      <Button><i className="fa fa-pencil" title="Edit"></i></Button>
-    </ div >
+      <p>Add</p>
+      <Button>
+        <span>
+          <Icon name='plus' />
+      Add
+      </span>
+      </Button>
+      <hr />
+    </ div>
   ))
 
