@@ -24,9 +24,13 @@
        Search's label
     ------------------*/
 
-    & > label {
+    &:not(.inline) > label {
         display: block;
+    }
+
+    & > label {
         margin-bottom: 3px;
+        margin-right: 10px;
         text-transform: capitalize;
         font-size: 12px;
         color: #7C7C7C;

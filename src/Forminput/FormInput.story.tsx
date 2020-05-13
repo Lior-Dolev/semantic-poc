@@ -17,9 +17,14 @@ storiesOf('Semantic', module)
             <FormInput label={"some label:"} />
             <br/><hr />
 
+            <h4>Inline label</h4>
+            <FormInput inline label={"some label:"} />
+            <br/><hr />
+
+
 
             <h4>Required</h4>
-            <FormInput label={"some label:"} isRequired />
+            <FormInput  label={"some label:"} isRequired />
             <br/><hr />
 
 

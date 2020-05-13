@@ -1,70 +1,124 @@
-.cp-chip {
-    display: inline-block;
-    margin-bottom: 15px;
-    margin-right: 10px;
-    box-sizing: border-box;
-    padding: 0 10px;
-    border-radius: 50px;
-    font-weight: 300;
-    position: relative;
-}
+/*.cp-chip {*/
+/*    display: inline-block;*/
+/*    margin-bottom: 15px;*/
+/*    margin-right: 10px;*/
+/*    box-sizing: border-box;*/
+/*    padding: 0 10px;*/
+/*    border-radius: 50px;*/
+/*    font-weight: 300;*/
+/*    position: relative;*/
+/*}*/
 
 
-.cp-chip:hover {
-    cursor: default;
-}
+/*.cp-chip:hover {*/
+/*    cursor: default;*/
+/*}*/
 
-.cp-chip span.inner {
-    display: inline-block;
-    /*background-color: red;*/
-    /*white-space: nowrap;*/
-    /*overflow: hidden;*/
-    /*text-overflow: ellipsis;*/
-    /*max-width: 100px;*/
-}
+/*.cp-chip span.inner {*/
+/*    display: inline-block;*/
+/*    !*background-color: red;*!*/
+/*    !*white-space: nowrap;*!*/
+/*    !*overflow: hidden;*!*/
+/*    !*text-overflow: ellipsis;*!*/
+/*    !*max-width: 100px;*!*/
+/*}*/
 
 
-.cp-chip .fc-icon.cross {
-    visibility: hidden;
-    margin-left: 10px;
-}
+/*.cp-chip .fc-icon.cross {*/
+/*    visibility: hidden;*/
+/*    margin-left: 10px;*/
+/*}*/
 
-.cp-chip:hover .fc-icon.cross {
-    visibility: visible;
-}
+/*.cp-chip:hover .fc-icon.cross {*/
+/*    visibility: visible;*/
+/*}*/
+
+
+/*!*****************************/
+/*        SOLID THEME*/
+/******************************!*/
+
+/*.cp-chip.solid-theme {*/
+/*    height: 22px;*/
+/*    line-height: 22px;*/
+/*    min-width: 75px;*/
+/*    max-width: 240px;*/
+/*    background-color: #E8E9EB;*/
+/*    color: #333333;*/
+/*}*/
+
+/*.cp-chip.solid-theme:hover {*/
+/*    background-color: #DEDFE0;*/
+/*}*/
+
+
+
+/*!*****************************/
+/*        BLUE THEME*/
+/******************************!*/
+
+/*.cp-chip.blue-theme {*/
+/*    height: 32px;*/
+/*    line-height: 32px;*/
+/*    min-width: 55px;*/
+/*    max-width: 180px;*/
+/*    font-size: 16px;*/
+/*    background-color: #49a7ff;*/
+/*    !*border: 1px solid black;*!*/
+/*    !*color: black;*!*/
+/*    color: white;*/
+/*}*/
+
+
 
 
 /****************************
-        SOLID THEME
+        REACT TAGS
 *****************************/
 
-.cp-chip.solid-theme {
+.cp-chips-group .tag-wrapper.ReactTags__tag {
+    display: inline-block;
+    /*min-width: 75px;*/
+    max-width: 240px;
+    border-radius: 50px;
+    padding: 0 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cp-chips-group .tag-wrapper.ReactTags__tag a {
+    margin-left: 10px;
+}
+
+.cp-chips-group.view-mode .tag-wrapper.ReactTags__tag {
     height: 22px;
     line-height: 22px;
-    min-width: 75px;
-    max-width: 240px;
     background-color: #E8E9EB;
     color: #333333;
 }
 
-.cp-chip.solid-theme:hover {
-    background-color: #DEDFE0;
+.cp-chips-group.view-mode .tag-wrapper.ReactTags__tag a{
+    color: #333333;
 }
 
 
+.edit-mode .tag-wrapper.ReactTags__tag {
+     height: 32px;
+     line-height: 32px;
+     min-width: 55px;
+     max-width: 180px;
+     font-size: 16px;
+     background-color: #49a7ff;
+     /*border: 1px solid black;*/
+     /*color: black;*/
+     color: white;
+ }
 
-/****************************
-        BLUE THEME
-*****************************/
-
-.cp-chip.blue-theme {
-    height: 32px;
-    line-height: 32px;
-    min-width: 55px;
-    max-width: 180px;
+.edit-mode .tag-wrapper.ReactTags__tag a{
     font-size: 16px;
-    background-color: #49a7ff;
-    /*border: 1px solid black;*/
-    /*color: black;*/
     color: white;
+}
+
+.ReactTags__tagInput {
+    /*display: none;*/
 }

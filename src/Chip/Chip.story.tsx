@@ -36,7 +36,7 @@ function ExampleContainerComponent() {
             <ChipsGroup
                 chips={chips}
                 handleChipDelete={handleChipDelete}
-                mode={'edit'} // view || edit? something like tha//)
+                mode={'edit'} // view || edit? something like that
             />
         )
 }

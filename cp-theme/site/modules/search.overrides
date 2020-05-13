@@ -1,6 +1,6 @@
 .cp-search-input.ui.search {
     & input {
-        width: 120px;
+        min-width: 120px;
         height: 30px;
         color: #333;
 

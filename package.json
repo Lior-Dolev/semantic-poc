@@ -49,7 +49,10 @@
     "front-common-icons": "git+https://cloudinfra@checkpoint.com:Sugarwillkillyou@gitlab.locsec.net/cloudinfra-dev/front-common-icons#1.4",
     "raw-loader": "^4.0.1",
     "react": "^16.13.1",
+    "react-dnd": "^5.0.0",
+    "react-dnd-html5-backend": "^3.0.2",
     "react-dom": "^16.13.1",
+    "react-tag-input": "^6.4.2",
     "semantic-ui-less": "^2.4.1",
     "semantic-ui-react": "^0.88.2",
     "to-string-loader": "^1.1.6"

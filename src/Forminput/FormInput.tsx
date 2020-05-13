@@ -32,7 +32,6 @@ export const FormInput = props => {
     return (
         <>
             <Input
-                inline={true}
                 // required={true}
                 labelPosition={'left-corner'}
                 className={formTextClasses}
