@@ -22,7 +22,7 @@ storiesOf('Semantic', module)
 
 function ExampleContainerComponent(props) {
     const chipsExampleObj = {
-        chip11: true,
+        chisaljdasljdlkjaskldjaslkjdlkajsklsjadlkajsp11: true,
         chip22: false,
         chip33: false,
         chip44: true,

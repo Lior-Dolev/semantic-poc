@@ -13,7 +13,12 @@
 }
 
 .cp-chips-group .tag-wrapper.ReactTags__tag a {
+    visibility: hidden;
     margin-left: 10px;
+}
+
+.cp-chips-group .tag-wrapper.ReactTags__tag:hover a {
+    visibility: visible;
 }
 
 .cp-chips-group.view-mode .tag-wrapper.ReactTags__tag {
