@@ -41,6 +41,7 @@ export const ChipsGroup = props => {
     }
 
     function handleDelete(indexToDelete) {
+        console.log('what', indexToDelete)
         const updatedTags  = [...stateTags];
         updatedTags.splice(indexToDelete, 1);
         const tagsObj = convertArrayToNormalizedObject(updatedTags);
@@ -79,6 +80,8 @@ export const ChipsGroup = props => {
                 handleDelete={handleDelete}
                 handleAddition={handleAddition}
                 handleInputBlur={handleInputBlur}
+                allowDeleteFromEmptyInput={false}
+                autofocus
                 delimiters={delimiters}
                 readOnly={mode === 'view'}
                 {...props}
@@ -87,65 +90,3 @@ export const ChipsGroup = props => {
         </div>
     )
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-//
-//
-//
-// export const Chip = props => {
-//     const {
-//         chipText ,
-//         children,
-//         handleChipDelete,
-//         mode = 'view',
-//     } = props;
-//
-//     const [shouldDeleteChip, setShouldDeleteChip] = useState(false)
-//
-//     useEffect(() => {
-//         if(shouldDeleteChip) {
-//             handleChipDelete && handleChipDelete(chipText)
-//         }
-//     }, [shouldDeleteChip])
-//
-//     function handleCloseClick() {
-//         setShouldDeleteChip(true)
-//     }
-//
-//     function calculateIconSize() {
-//         return mode === 'view' ? 7 : 10
-//     }
-//
-//
-//     const chipClasses = classNames({
-//         'cp-chip': true,
-//         'solid-theme': mode === 'view',
-//         'blue-theme': mode === 'edit',
-//     });
-//
-//     return (
-//         <span
-//             className={chipClasses}
-//         >
-//             <span className={'inner'}>{chipText || children}</span>
-//             <Icon
-//                 className={'cross'}
-//                 name={'cross'}
-//                 width={calculateIconSize()}
-//                 height={calculateIconSize()}
-//                 onClick={handleCloseClick}
-//             />
-//         </span>
-//     )
-// };

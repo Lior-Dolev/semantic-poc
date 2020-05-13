@@ -9,11 +9,11 @@ storiesOf('Semantic', module)
 
             <h2>View Mode (read only)</h2>
             <ExampleContainerComponent />
-            <br/><hr />
+            <br/><br/><hr />
 
             <h2>Edit Mode</h2>
             <ExampleContainerComponent mode={'edit'}/>
-            <br/><hr />
+            <br/><br/><hr />
 
         </div>
     ));
@@ -48,7 +48,7 @@ function ExampleContainerComponent(props) {
                 chips={chips}
                 handleChipDelete={handleChipDelete}
                 handleChipAddition={handleChipAddition}
-                {...props}   // pass down the 'mode' prop here
+                {...props}   // just for passing down the 'mode' prop.. should be passed explicitly in regular use
             />
         )
 }
