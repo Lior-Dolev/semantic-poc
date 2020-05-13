@@ -5,17 +5,20 @@
 .cp-form-input.field {
     min-width: 120px;
 
-    & .ui.input input {
-        height: 30px;
-        width: 100%;
-        padding-left: 10px;
+    & .ui.input {
+        min-width: 120px;
+        & input {
+            height: 30px;
+            width: 100%;
+            padding-left: 10px;
 
-        &::placeholder {
-            font-style: italic;
-        }
+            &::placeholder {
+              font-style: italic;
+            }
 
-        &:focus::placeholder {
-        color: #C6C9CF;
+            &:focus::placeholder {
+            color: #C6C9CF;
+            }
         }
     }
 
