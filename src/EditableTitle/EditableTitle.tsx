@@ -1,5 +1,5 @@
 import * as React from 'react'
-import {useRef, useState} from "react";
+import { useState } from "react";
 import { Input as SInput } from 'semantic-ui-react'
 import classNames from 'classnames'
 import {KEYS_ASCII} from './tmpConsts'
