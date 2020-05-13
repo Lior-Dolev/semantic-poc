@@ -41,7 +41,7 @@ storiesOf('Semantic', module)
                     <FormInput readOnly value={'lorem ipsum dolor'}/>
                 </div>
                 <div className={'side-by-side-inner right'}>
-                <h4>Read only- default (Semantic UI React)</h4>
+                    <h4>Read only- default (Semantic UI React)</h4>
                     <Form.Input readOnly value={'lorem ipsum dolor'}/>
                 </div>
             </div>
