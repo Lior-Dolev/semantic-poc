@@ -22,15 +22,19 @@ export const ChipsGroup = props => {
     const [shouldDisplayInput, setShouldDisplayInput] = useState(false)
 
     useEffect(() => {
-        let normalizedTags = [];
-        let tmp = Object.keys(chips);
-        normalizedTags = tmp.map(tag => {
-            return {id: tag, text: tag, boolValue: chips[tag]}
-        });
+        let normalizedTags = convertObjectToArray()
         setTags(normalizedTags)
     }, [chips]);
 
-    const delimiters = [KeyCodes.enter];
+
+    function convertObjectToArray() {
+        let tmp = Object.keys(chips);
+        let normalizedTags = [];
+        normalizedTags = tmp.map(tag => {
+            return {id: tag, text: tag, boolValue: chips[tag]}
+        });
+        return normalizedTags
+    }
 
     function convertArrayToNormalizedObject(arrOfTags) {
         const tagsObj = {};
@@ -45,7 +49,7 @@ export const ChipsGroup = props => {
         updatedTags.splice(indexToDelete, 1);
         const tagsObj = convertArrayToNormalizedObject(updatedTags);
         handleChipDelete(tagsObj);
-    };
+    }
 
     function handleAddition(tag) {
         const newTag = {...tag};
@@ -54,7 +58,7 @@ export const ChipsGroup = props => {
         updatedTags.push(newTag);
         const tagsObj = convertArrayToNormalizedObject(updatedTags);
         handleChipAddition(tagsObj);
-    };
+    }
 
     function handleAddClick() {
         setShouldDisplayInput(true)
@@ -81,7 +85,7 @@ export const ChipsGroup = props => {
                 handleInputBlur={handleInputBlur}
                 allowDeleteFromEmptyInput={false}
                 autofocus
-                delimiters={delimiters}
+                delimiters={[KeyCodes.enter]}
                 readOnly={mode === 'view'}
                 {...props}
             />

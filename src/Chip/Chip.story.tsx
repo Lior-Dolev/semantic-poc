@@ -39,7 +39,7 @@ function ExampleContainerComponent(props) {
     }
 
     function handleChipAddition(updatedTags) {
-        console.log('contianer component got: ', updatedTags)
+        console.log('container component got: ', updatedTags)
         setChips(updatedTags)
     }
 
