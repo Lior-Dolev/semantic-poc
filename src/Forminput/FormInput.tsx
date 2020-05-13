@@ -21,6 +21,21 @@ export const FormInput = props => {
         validationMessage,
     } = props;
 
+    function getIconName() {
+        switch (validationMode) {
+            case inputValidationStatus.NONE:
+                return '';
+            case inputValidationStatus.VALID:
+                return 'check circle';
+            case inputValidationStatus.INVALID:
+                return 'info circle';
+            case inputValidationStatus.WARNING:
+                return 'warning sign';
+            default:
+                return ''
+        }
+    }
+
     const formTextClasses = classnames({
         'cp-form-input': true,
         'required': isRequired,
@@ -32,11 +47,9 @@ export const FormInput = props => {
     return (
         <>
             <Input
-                // required={true}
-                labelPosition={'left-corner'}
+                icon={getIconName()}
                 className={formTextClasses}
                 placeholder={placeholder || 'Enter text here...'}
-
                 {...props}
             />
 

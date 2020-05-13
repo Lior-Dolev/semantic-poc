@@ -68,6 +68,16 @@
     ------------------------*/
 
     &.has-validation {
+        & i {
+            opacity: 1 !important;
+            width: 20px !important;
+            margin-right: 3px !important;
+        }
+
+        & input {
+            padding-right: 15 !important;
+        }
+
         & ~ span.validation-message {
             display: inline-block;
             margin-top: 3px;
@@ -78,6 +88,11 @@
             & input {
                 border-color: #56B40A;
             }
+
+            & i {
+                color: #56B40A;
+            }
+
             & ~ span.validation-message {
                 color: #56B40A;
             }
@@ -87,6 +102,11 @@
             & input {
                 border-color: #F24E4E;
             }
+
+            & i {
+                color: #F24E4E;
+            }
+
             & ~ span.validation-message {
                 color: #F24E4E;
             }
@@ -96,6 +116,11 @@
             & input {
                 border-color: #FFB72D;
             }
+
+            & i {
+                color: #FFB72D;
+            }
+
             & ~ span.validation-message {
                 color: #FFB72D;
             }
