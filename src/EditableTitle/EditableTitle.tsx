@@ -16,10 +16,6 @@ export const EditableTitle = props => {
         setHeaderContent(e.target.value)
     }
 
-    function isKeyEscapeOrEnter(keyCode) {
-        return (keyCode === KEYS_ASCII.enter || keyCode === KEYS_ASCII.escape)
-    }
-
     function handleKeyPress(pressedKey) {
         if( headerContent && pressedKey.which === KEYS_ASCII.enter) {
             pressedKey.target.blur()

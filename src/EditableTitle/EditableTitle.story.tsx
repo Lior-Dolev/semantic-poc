@@ -10,7 +10,7 @@ storiesOf('Semantic', module)
             <EditableTitle
                 onTitleChange={(titleContent) => {console.log(`header changed to: ${titleContent}`)}}
             >
-                Check point Wiki Point
+                Check point Example
             </EditableTitle>
             <br/><hr />
         </ div>
