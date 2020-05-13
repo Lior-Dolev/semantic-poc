@@ -27,11 +27,11 @@ storiesOf('Semantic', module)
             <br/>
             <div className={'side-by-side-wrapper'} >
                 <div className={'side-by-side-inner'} >
-                    <h4>Read only- check point</h4>
+                    <h4>Disabled- check point</h4>
                     <Search disabled value={'lorem ipsum dolor'}/>
                 </div>
                 <div className={'side-by-side-inner'} >
-                    <h4>Read only- default (Semantic UI React)</h4>
+                    <h4>Disabled- default (Semantic UI React)</h4>
                     <SemanticSearch className={'semantic-search'} disabled value={'lorem ipsum dolor'}/>
                 </div>
             </div>
