@@ -22,7 +22,7 @@ storiesOf('Semantic', module)
 			<p>{' '}Combo Default</p>
 			<Select options={options}></Select>
 			<hr />
-			<p>Default Disable</p>
+			<p>Default Disable Styled</p>
 			<Select options={options} disabled></Select>
 			<hr />
 			<p>Default Invalid</p>

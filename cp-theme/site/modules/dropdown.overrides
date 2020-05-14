@@ -21,7 +21,7 @@
 			&:active {
 				background: #cccdcf
 			}
-			&.disabled {
+			&.disabled{
 				border: 1px solid #D2D5D9;
 			}
 		}
@@ -39,7 +39,7 @@
  &.disabled, &.readOnly { 
 	 background: #E7E9EB;
 	  &:not(.readOnly){
-	 .default.text {
+	 .default.text, .dropdown.icon {
 		 color: #A7A9AC;
 	 	}
 	 }
